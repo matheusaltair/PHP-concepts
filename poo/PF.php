@@ -3,7 +3,7 @@ require "Usuario.php";
 
 class PF extends Usuario {
 
-    protected $_cpf;
+    private $_cpf;
 
     /**
      * Reescrita do construtor original new PF($nome,$login,$senha,$email,$cpf)
@@ -15,7 +15,7 @@ class PF extends Usuario {
             $this->_email = $email;
             $this->_cpf = $cpf;    
         }
-
+ 
     /**
      * Criacao de novo método exclusivo da classe PF
      */
@@ -27,7 +27,7 @@ class PF extends Usuario {
 
 echo "<h1>TRABALHANDO COM HERANÇA - USUARIO PF </h1>";
 
-$user = new PF("Rogerio Feliz", "testerogerio", md5("123456"), "testerogerio@gmail.com", "32165498710");
+$user = new PF("Rogerio Alberto", "testerogerio", md5("123456"), "testerogerio@gmail.com", "05695062054");
 echo $user->logarComCpf();
 echo "<br>";
 echo $user->consultar();

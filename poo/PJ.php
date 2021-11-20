@@ -2,7 +2,7 @@
 require "Usuario.php";
 class PJ extends Usuario {
     const MESSAGE = "Usuário PJ - MESSAGE"; //SEMPRE UTILIZAR LETRA MAIUSCULA
-    protected $_cnpj;
+    private$_cnpj;
 
     public function __construct(string $nome, string $login, string $senha, string $email, string  $cnpj ){
         $this->_nome = $nome;

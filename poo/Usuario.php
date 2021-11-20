@@ -1,9 +1,9 @@
 <?php 
 class Usuario {
-    protected $_nome;
-    protected $_login;
-    protected $_senha;
-    protected $_email;
+    private $_nome;
+    private $_login;
+    private $_senha;
+    private $_email;
 
     public function __construct(string $nome, string $login, string $senha,  string $email) {
         $this->_nome = $nome;
