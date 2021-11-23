@@ -1,3 +1,3 @@
 # php-mentoria
-exemplos que comecam desde o básico de php até os mais avançados.
-esta pasta contém um Crud e um sistema de login que funcionam junto ao mysql. 
+Este projeto possui fundamentos que começam desde o básico de php até o mais avançado.
+Contém um Crud que funcionam junto ao banco de dados mysql. 
