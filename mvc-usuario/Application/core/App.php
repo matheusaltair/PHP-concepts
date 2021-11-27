@@ -17,6 +17,7 @@ class App
   // Método construtor
   public function __construct()
   {
+   
     $URL_ARRAY = $this->parseUrl();
     $this->getControllerFromUrl($URL_ARRAY);
     $this->getMethodFromUrl($URL_ARRAY);

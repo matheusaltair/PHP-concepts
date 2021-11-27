@@ -44,4 +44,26 @@ class Controller
   {
     $this->view('erro404');
   }
+
+
+  public function url($param)
+  {
+    return 'http://'.$_SERVER['SERVER_NAME'].':'.$_SERVER['SERVER_PORT'].'/'.$param;
+  }
+
+  public function getMessage(){
+    if(!isset($_SESSION)){ 
+      session_start(); 
+    } 
+    $message = (isset($_SESSION['msg'])) ? $_SESSION['msg'] : '';
+    unset($_SESSION['msg']);
+    return $message;
+  }
+
+  public function setMessage($msg){
+    if(!isset($_SESSION)){ 
+      session_start(); 
+    } 
+    $_SESSION['msg'] = $msg;
+  }
 }
